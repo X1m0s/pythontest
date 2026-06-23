@@ -1,0 +1,14 @@
+# 虚拟环境
+.venv/
+
+# Python缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+
+# 系统文件
+Thumbs.db
+Desktop.ini
