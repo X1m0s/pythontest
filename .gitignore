@@ -9,6 +9,10 @@ __pycache__/
 # IDE
 .vscode/
 
+# 同步工具（不随项目上传）
+sync.py
+.sync_config.json
+
 # 系统文件
 Thumbs.db
 Desktop.ini
