@@ -33,3 +33,27 @@ print("max('Aa','aA',key=str.lower)=",max("Aa","aA",key=str.lower))
 "apple" < "app"   # False  l > (空)
 """
 #-----9.modf()-----
+import math
+print("math.modf(100.12)=",math.modf(100.12))      #modf()函数在math模块下,同样仅支持实数参数
+print("math.modf(-100.72)=",math.modf(-100.72))    #modf()返回参数的整数部分和小数部分
+print("math.modf(119)=",math.modf(119))            #modf()返回值为浮点型元组
+print("math.modf(math.pi)=",math.modf(math.pi))    #元组的第一个元素为小数部分，第二个为整数部分
+#-----10.pow()-----
+#pow()函数较为特殊，python内置的pow()函数参数值为pow(x,y,z)，使用方式是计算x的y次方
+#如果存在z对结果取模，等效于x**y%z，math模块的pow()函数仅支持(x,y)两个参数，此外会将参数转换为浮点型
+print("math.pow(100,2)=",math.pow(100,2))
+print("pow(100,2)=",pow(100,2))
+print("math.pow(100,-2)=",math.pow(100,-2))
+#内置的pow()函数支持复数计算，但不支持参数z的对结果取模
+print("pow(3+2j,2)=",pow(3+2j,2))
+#-----11.round()-----
+print("round(70.23456)=",round(70.23456))           #round()函数为内置函数，用于返回浮点数的四舍五入值
+print("round(56.659,1)=",round(56.659,1))           #参数列表为round(x,n)，n为精确到小数点后位数
+print("round(80.264,2)=",round(80.264,2))
+print("round(100.000056,3)=",round(100.000056,3))
+print("round(-100.000056,3)=",round(-100.000056,3))
+#个别情况下返回结果不正确，主要原因是浮点数精度问题
+#-----12.sqrt()-----
+print("math.sqrt(100)=",math.sqrt(100))             #sqrt()函数在math模块下，仅支持实参，返回值为浮点
+print("math.sqrt(7)=",math.sqrt(7))                 
+print("math.sqrt(math.pi)=",math.sqrt(math.pi))
