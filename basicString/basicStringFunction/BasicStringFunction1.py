@@ -73,5 +73,5 @@ print("使用5个空格替换\\t符号:",str.expandtabs(5))
 #6个空格，runoob6个字符，\t填充6空格，12345有5个字符，\t填充1空格
 print("使用6个空格替换\\t符号:",str.expandtabs(6))
 
-#AI整理的计算公式
+#AI整理的填充空格数计算公式
 #填充空格数=tabsize-(col%tabsize),col为制表符\t的等效已展开列号，具体见运行原理图中
