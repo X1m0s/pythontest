@@ -48,8 +48,10 @@ print(f"test_dict:{test_dict}的长度为{len(test_dict)}")
 #rjust()函数与ljust()函数没有过多区别，唯一不同点是rjust()函数返回的字符串向右对齐
 str1="Runoob example....wow!!!"
 print(str1.ljust(50,"*"),str1.rjust(50,"*"))
-#-----14.lower()-----
-print("Runoob EXAMPLE....WOW!!!".lower())   #只是个把大写字母全部转成小写字母的函数
+#-----14.lower()&upper()&swapcase()-----
+print("Runoob EXAMPLE....WOW!!!".lower())       #只是个把大写字母全部转成小写字母的函数
+print("runoob example....wow!!!".upper())       #相反，把小写全转大写
+print("RUNOOB example....WOW!!!".swapcase())    #把大写字母转成小写字母，小写字母转成大写字母       
 #-----15.lstrip()&rstrip()&strip()-----
 #lstrip()用于截掉字符串左边的字符，rstrip()相反，strip()则是两侧
 #strip(chars)chars为要移除的字符集合(字符串形式),参数为空时默认移除空白字符(空格、\t、\n、\r、\v、\f)
