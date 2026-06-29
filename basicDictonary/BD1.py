@@ -40,3 +40,10 @@ print("删除User后的字典:",test_dict)
 test_dict.clear()
 print("使用clear()清空后的字典:",test_dict)
 del test_dict                               #此时字典已完全删除，若再使用print打印报错
+
+#此外常规数据类型中，字典在直接迭代时，只会迭代键，值会直接丢失
+d={"a":1,"b":2}
+for x in d:
+    print(x)                #仅迭代出"a"和"b"
+for x in d.items():
+    print(x)                #迭代完整内容
