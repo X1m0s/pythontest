@@ -49,7 +49,7 @@ print("salary:",test_dict.get("salary",0.0))
 test_dict={"Runoob":{"url":"www.runoob..com"}}
 res=test_dict.get("Runoob",{}).get("url")
 print("Runoob的url为:",str(res))
-#get(key)比起dict(key)的优势主要在于当Key不在字典中时，get( )不报错，仍能返回默认值
+#get(key)比起dict(key)的优势主要在于当Key不在字典中时，get()不报错，仍能返回默认值
 #setdefault(key,default)的特点在于当键不存在于字典中时，会添加键并提供默认值
 test_dict={"name":"Runoob","age":27}
 print("age:",test_dict.setdefault("age"))
