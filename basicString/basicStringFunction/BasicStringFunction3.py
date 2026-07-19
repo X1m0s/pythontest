@@ -43,7 +43,7 @@ test_dict={"apple":3,"banana":2,"cherry":4}
 print(f"test_dict:{test_dict}的长度为{len(test_dict)}")
 #对于字符串，返回字符个数；对于字典，返回键值对个数；对于其他可迭代对象返回元素个数
 #-----13.ljust()&rjust()-----
-#ljust()函数返回一个原字符串左对齐，使用空格填充至指定长度的新字符串，如果指定长度小于原长放回原字符串
+#ljust()函数返回一个原字符串左对齐，使用空格填充至指定长度的新字符串，如果指定长度小于原长返回原字符串
 #str.ljust(width,fillchar),width为新字符串指定长度，fillchar为填充字符，默认为空格
 #rjust()函数与ljust()函数没有过多区别，唯一不同点是rjust()函数返回的字符串向右对齐
 str1="Runoob example....wow!!!"
