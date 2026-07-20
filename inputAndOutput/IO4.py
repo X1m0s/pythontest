@@ -47,3 +47,13 @@ data2=pickle.load(pkl_file)
 pprint.pprint(data2)
 
 pkl_file.close()
+
+#针对序列化，简单来说就是将内存中的对象转写成字节流，存到磁盘，反序列化就是从磁盘重新读回内存
+#使用二进制模式是因为pickle输出的是字节流而非文本
+#dump()函数中的参数protocal常见的取值为(0:ASCII协议 1/2/3:旧版二进制协议 4:Python3.4+ 5:Python3.8+ -1:自动选当前Python支持的最高版本)
+#pickle可以存储任何python的内置类型，甚至是自定义类实例和自引用
+#dump和load是按顺序一一对应的，每个dump()都会在文件中加一段，每个load()都会读取一段，先存先读(类似FIFO?)
+#pprint()比起print()输出挤在一行，pprint.pprint()会格式化展开，可以更清晰体现嵌套结构
+#总结：
+#pickle 就像记忆卡存档——不管程序里的对象结构多复杂，dump() 存盘、load() 读回来，完美还原。
+#唯一要注意的就是：只从可信来源读取，因为加载 pickle 可以执行任意代码，有安全风险。
